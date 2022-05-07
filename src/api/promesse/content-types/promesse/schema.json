@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promesses",
+  "info": {
+    "singularName": "promesse",
+    "pluralName": "promesses",
+    "displayName": "promesse",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "utilisateur": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
+    },
+    "prix": {
+      "type": "decimal"
+    },
+    "cadeau": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cadeau.cadeau"
+    }
+  }
+}
